@@ -113,7 +113,7 @@ function generatePayload(user) {
 function generateAccessToken(payload) {
   // expires after 15-30 min (9000 seconds = 15 minutes)
   return jwt.sign(payload, process.env.ACCESS_TOKEN_SECRET, {
-    expiresIn: "80s",
+    expiresIn: "180s",
   });
 }
 

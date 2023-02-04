@@ -11,7 +11,7 @@ exports.getUser = async (req, res) => {
     {
         res.status(400).json({
             success: false,
-            message: err.message
+            error: err.message
         });
     } 
 }
@@ -27,7 +27,7 @@ exports.getUserById = async (req, res) => {
     {
         res.status(400).json({
             success: false,
-            message: err.message
+            error: err.message
         });
     }
 }
@@ -43,7 +43,7 @@ exports.createUser = async (req, res) => {
     {
         res.status(400).json({
             success: false,
-            message: err.message
+            error: err.message
         });
     }
 }
@@ -59,7 +59,7 @@ exports.deleteUser = async (req, res) => {
     {
         res.status(400).json({
             success: false,
-            message: err.message
+            error: err.message
         });
     }
 }

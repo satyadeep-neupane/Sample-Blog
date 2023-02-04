@@ -1,4 +1,6 @@
-require('dotenv').config();
+require('dotenv').config({
+    // path: './backend/.env'
+});
 
 const jwt = require('jsonwebtoken');
 const User = require('../models/model.user');
